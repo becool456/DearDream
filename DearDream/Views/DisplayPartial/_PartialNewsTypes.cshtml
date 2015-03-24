@@ -1,0 +1,9 @@
+﻿<div class="nvabar">
+    <ul class="nav-frame">
+        <li class="nav-button"><a class="a-color" href="~/Home/Index">首页</a></li>
+        @foreach (var item in ViewBag.NewsTypes)
+        {
+            <li class="nav-button"><a class="a-color" href=''>@item.Name</a></li>
+        }
+    </ul>
+</div>

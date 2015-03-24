@@ -1,0 +1,61 @@
+﻿@model DearDreamModels.ViewModel.MainNewsViewModel
+@using System.Data.Entity.ModelConfiguration.Conventions
+@using Kendo.Mvc;
+@using Kendo.Mvc.UI;
+@using DearDreamModels;
+
+@{
+    ViewBag.Title = "新闻格子铺";
+}
+
+@*<script>
+    $(document).ready(function () {
+        var color = getRandomColor();
+        $("div.myclass").css("background-color", color);
+        var i = 1000;
+    })
+    function getRandomColor() {
+        return "#" + ("00000" + ((Math.random() * 16777215 + 0.5) >> 0).toString(16)).slice(-6);
+    }
+</script>*@
+<div class="row row-offcanvas row-offcanvas-right">
+
+    <div class="col-xs-10 col-sm-9">
+            @foreach (var type in Model.Categories)
+            {
+                <div class="row">
+                    <h3 style="font-family:SimHei" href="/Home/Category?category=@type.Name">@type.Name</h3>
+
+                    @foreach (var item in Model.PreViewList.Where(o => o.Category == type.Name))
+                    {
+                    <div class="col-xs-6 col-lg-6 sidebar-offcanvas">
+                        <div>
+                            <p><a  href="/Home/SingleNews/@item.Id" role="button" style="float:left;font-family:'Microsoft YaHei' ! important">@Html.DisplayFor(modelItem => item.Title)<div style="float:right" >@item.Time.ToShortDateString()</div></a></p>
+                        </div>
+                    </div><!--/.col-xs-6.col-lg-4-->
+                    }
+                    @*@Html.ActionLink("More", "Category", new { category = @type.Name })*@
+                    <a href="/Home/Category?category=@type.Name" style="float:right">More</a>
+                </div><!--/row-->
+            }
+         
+     </div><!--/.col-xs-12.col-sm-9-->
+
+    <div class="col-sm-3" id="sidebar" >
+            <div style="text-align:center">
+               <h3>为您推荐</h3> 
+            </div>
+           
+            @foreach (var item in Model.RecomList)
+            {
+                <div class="list-group">
+                    <a href="/Home/SingleNews/@item.Id" class="list-group-item active">@item.Title</a>      
+                </div>
+            }
+    </div><!--/.sidebar-offcanvas-->
+</div><!--/row-->
+
+
+
+
+

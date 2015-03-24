@@ -1,0 +1,2282 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+[class*='span'] {
+	text-align: left; margin-left: 0px;
+}
+blockquote {
+	padding-left: 0px; margin-bottom: 0px; border-left-color: currentColor; border-left-width: 0px; border-left-style: none;
+}
+blockquote p {
+	line-height: inherit; font-size: inherit; font-weight: inherit;
+}
+.container {
+	width: 870px; position: relative;
+}
+.row {
+	margin-left: 0px;
+}
+.flipped .close {
+	font-size: 40px;
+}
+div.flipped {
+	z-index: 100;
+}
+.popover {
+	width: 330px; z-index: 1;
+}
+.right.popover {
+	margin-left: 12px;
+}
+input {
+	font-family: "ProximaNova", helvetica, arial, sans-serif;
+}
+button {
+	font-family: "ProximaNova", helvetica, arial, sans-serif;
+}
+textarea {
+	font-family: "ProximaNova", helvetica, arial, sans-serif;
+}
+@media not all
+{
+select {
+	font-family: Arial;
+}
+}
+#map {
+	top: 0px; width: 100%; height: 100%; position: fixed; z-index: 0;
+}
+.leaflet-container {
+	font-family: "ProximaNova", helvetica, arial, sans-serif !important;
+}
+.leaflet-container .leaflet-control-attribution {
+	font-size: 10px;
+}
+.leaflet-control-container {
+	display: none;
+}
+.leaflet-control-layers-selector {
+	margin: -4px 3px 0px 0px !important;
+}
+.leaflet-control-layers-list {
+	margin-bottom: 0px !important;
+}
+.leaflet-control-layers-list label span {
+	margin-right: 3px;
+}
+.mapView .leaflet-control-container {
+	display: block;
+}
+body {
+	text-align: left; color: rgb(6, 8, 8); font-family: "ProximaNova", helvetica, arial, sans-serif; background-color: rgb(250, 250, 250);
+}
+body {
+	-webkit-backface-visibility: hidden;
+}
+a {
+	color: rgb(221, 54, 24); transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+a {
+	
+}
+a:hover {
+	
+}
+a:active {
+	
+}
+a:focus {
+	
+}
+a.glyph:focus {
+	text-decoration: none;
+}
+object {
+	outline: 0px;
+}
+embed {
+	outline: 0px;
+}
+h1 {
+	margin: 0px; padding: 0px; text-rendering: auto;
+}
+h2 {
+	margin: 0px; padding: 0px; text-rendering: auto;
+}
+h3 {
+	margin: 0px; padding: 0px; text-rendering: auto;
+}
+h4 {
+	margin: 0px; padding: 0px; text-rendering: auto;
+}
+h1 {
+	font-size: 28px;
+}
+h2 {
+	font-size: 22px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 14px;
+}
+.headline a {
+	color: rgb(0, 0, 0); text-decoration: none; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.headline a:visited {
+	color: rgb(102, 102, 102); border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.headline a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; border-bottom-color: rgb(249, 66, 29); border-bottom-width: 1px; border-bottom-style: dotted; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+#site-header {
+	background: rgba(255, 255, 255, 0.9); top: 0px; height: 40px; display: block; position: fixed; z-index: 100;
+}
+.mapView #site-header {
+	border-top-left-radius: 4px; border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -moz-border-radius-topleft: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topright: 4px;
+}
+#site-header a.title {
+	line-height: 40px; display: block;
+}
+#site-header nav {
+	top: 0px; right: 0px; position: absolute;
+}
+#site-header nav .user-topics > a {
+	padding: 9px 10px; width: auto; color: rgb(221, 54, 24); text-transform: uppercase; font-size: 14px; margin-top: -5px; margin-left: 5px; float: left; display: inline-block;
+}
+#site-header nav .user-topics > a.active {
+	background: rgb(226, 235, 242);
+}
+#site-header nav .user-topics a.navitem .glyph {
+	width: 20px; color: rgb(221, 54, 24); font-size: 14px; margin-top: 5px; float: left; position: relative;
+}
+#site-header nav .search-topics.user-topics a.navitem .glyph {
+	width: 10px;
+}
+#site-header nav .muted-topics.user-topics {
+	margin-right: 11px;
+}
+#site-header nav .user-topics .navlabel {
+	margin-top: 2px; float: left; position: relative;
+}
+#site-header nav .saved-topics.user-topics .navlabel {
+	display: inline-block;
+}
+#site-header nav .muted-topics.user-topics .navlabel {
+	display: inline-block;
+}
+#site-header nav .user-topics {
+	top: 5px; float: left; display: inline-block; position: relative;
+}
+#site-header nav .user-topics .noresults {
+	padding: 7px 13px; height: auto; color: rgb(134, 148, 166); font-size: 16px;
+}
+#site-header nav .user-topics .noresults .glyph {
+	top: 2px; position: relative;
+}
+.logo-mark {
+	transition:opacity 0.5s; top: 10px; width: 43px; color: rgb(255, 255, 255); font-size: 22px; margin-left: 20px; display: inline-block; position: absolute; z-index: 12; opacity: 0.4; -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+a.logo-mark:hover {
+	transition:opacity 0.5s; color: rgb(255, 255, 255); opacity: 0.9; -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.logo-text {
+	top: 1px; color: rgb(221, 54, 24); font-size: 18px; font-weight: bold; margin-left: 68px; display: inline-block; position: relative; z-index: 14;
+}
+.logo-home {
+	display: none;
+}
+#site-header nav .user-topics input {
+	width: 250px;
+}
+#site-header nav .user-topics .twitter-typeahead {
+	color: rgb(119, 132, 149); text-transform: uppercase; line-height: 16px; font-family: "ProximaNova", helvetica, arial, sans-serif; font-size: 14px;
+}
+#site-header nav .user-topics .twitter-typeahead input {
+	text-transform: uppercase; font-family: "ProximaNova", helvetica, arial, sans-serif; font-size: 14px;
+}
+#site-header nav .user-topics .twitter-typeahead .tt-dropdown-menu {
+	padding: 0px; overflow: auto; margin-top: -10px; max-height: 300px; box-shadow: 0px 2px 5px #999;
+}
+#site-header nav .user-topics .twitter-typeahead .tt-hint {
+	background: none !important; padding: 0px 6px 0px 9px; border-radius: 0px; border: currentColor; border-image: none; margin-top: 4px; box-shadow: none;
+}
+#site-header nav .user-topics .twitter-typeahead .tt-input {
+	background: none !important; border-width: medium medium 2px; border-style: none none solid; border-color: currentColor currentColor rgb(221, 54, 24); padding: 0px 6px 0px 9px; border-radius: 0px; border-image: none; margin-top: 4px; box-shadow: none;
+}
+#site-header nav .user-topics .twitter-typeahead .tt-suggestion {
+	padding: 7px 10px; line-height: 16px; position: relative; background-color: rgb(226, 235, 242);
+}
+#site-header nav .user-topics .twitter-typeahead .see-all {
+	color: rgb(221, 54, 24);
+}
+#site-header nav .user-topics .twitter-typeahead .header {
+	padding: 4px 10px; color: rgb(153, 153, 153); line-height: 16px; font-size: 11px; font-weight: normal; position: relative; background-color: rgb(255, 255, 255);
+}
+#site-header nav .user-topics .twitter-typeahead .tt-suggestion .muted {
+	margin-left: 4px;
+}
+#site-header nav .user-topics .twitter-typeahead .tt-cursor.tt-suggestion {
+	background-color: rgb(212, 221, 228);
+}
+#site-header nav .user-topics .twitter-typeahead :-ms-input-placeholder {
+	color: rgb(221, 54, 24); text-transform: uppercase; font-family: "ProximaNova", helvetica, arial, sans-serif; font-size: 14px;
+}
+#site-header nav .user-topics .twitter-typeahead .name {
+	padding-right: 4em; position: relative;
+}
+#site-header nav .user-topics .twitter-typeahead .count {
+	top: 7px; text-align: right; right: 12px; color: rgb(153, 153, 153); font-size: 11px; position: absolute;
+}
+#site-header nav .user-topics .twitter-typeahead .count .num {
+	font-weight: bold;
+}
+#site-header nav .user-topics .twitter-typeahead .count .numlabel {
+	text-transform: lowercase; clear: both;
+}
+#site-header nav .user-topics .topic-list ul {
+	margin-bottom: 0px;
+}
+header.section {
+	background: rgb(179, 195, 207); left: 0px; width: 100%; height: auto; display: block; z-index: 11; min-height: 46px; opacity: 1;
+}
+header.section h1 {
+	padding: 8px 0px; top: 2px; width: 75%; text-transform: uppercase; line-height: 25px; overflow: hidden; margin-left: 68px; display: inline-block; white-space: nowrap; position: relative; -ms-text-overflow: ellipsis;
+}
+header.section h1.fulltitle {
+	height: auto; white-space: normal;
+}
+.stream h1 {
+	height: auto; white-space: normal;
+}
+header.section .pagetitle {
+	float: left; position: relative;
+}
+header.section .pagetitle h1 a {
+	color: rgb(255, 255, 255);
+}
+header .stream-actions {
+	top: 13px; right: 4px; position: absolute;
+}
+.page > .container {
+	padding-top: 46px;
+}
+.page > header.section {
+	top: 0px; position: absolute;
+}
+#stream > .container {
+	padding-top: 86px;
+}
+#stream > .container .sidebar {
+	position: relative;
+}
+#stream > header.section {
+	background: rgb(221, 54, 24); top: 40px;
+}
+#whoa > header.section {
+	background: rgb(139, 182, 219);
+}
+header.fixed.section {
+	top: 40px; position: fixed;
+}
+.mapView .site-header {
+	position: relative;
+}
+.mapView #site-header {
+	position: relative;
+}
+.mapView header.fixed.section {
+	top: 40px; position: absolute;
+}
+.mapView #stream > header.section {
+	top: 0px; position: absolute;
+}
+.mapView #stream > .container {
+	padding-top: 46px;
+}
+.page {
+	position: relative;
+}
+.fullpage .logo-text {
+	display: none;
+}
+.fullpage .stream-actions {
+	display: none;
+}
+.fullpage .page .container .span7 {
+	width: 100%;
+}
+.pagecontent {
+	padding: 30px; min-height: 250px; background-color: rgb(255, 255, 255);
+}
+.inset.pagecontent {
+	padding-left: 68px;
+}
+#whoa {
+	background: rgb(190, 208, 222); padding-bottom: 3em; margin-top: 3em;
+}
+.btn {
+	z-index: 100;
+}
+.item .btn {
+	z-index: 9;
+}
+.map_popup {
+	width: 150px; text-align: left; line-height: 14px; font-family: "ProximaNova", helvetica, arial, sans-serif; margin-top: 30px; margin-left: -86px;
+}
+.map_popup .topic {
+	background: rgba(255, 255, 255, 0.9); padding: 8px 12px; color: rgb(102, 102, 102); border-top-left-radius: 4px; border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -moz-border-radius-topleft: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topright: 4px;
+}
+.map_popup .content {
+	padding: 8px 12px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-color: rgba(240, 240, 240, 0.9); -webkit-border-bottom-left-radius: 4px; -moz-border-radius-bottomleft: 4px; -webkit-border-bottom-right-radius: 4px; -moz-border-radius-bottomright: 4px;
+}
+.map_popup .content .timestamp {
+	font-weight: bold;
+}
+.actions a.glyph {
+	margin: 0px 8px; padding: 0px 8px; color: rgb(255, 255, 255); text-decoration: none; display: inline-block;
+}
+.actions a.glyph-bookmark {
+	font-size: 18px;
+}
+.actions a.glyph-share {
+	font-size: 22px; margin-top: -4px;
+}
+.actions a.glyph-mute {
+	font-size: 18px;
+}
+.actions a.glyph-world-america {
+	font-size: 18px;
+}
+.actions a.glyph-sorted-list {
+	font-size: 16px;
+}
+.actions a.btn {
+	margin: -7px 5px 0px;
+}
+.subhead {
+	background: rgb(221, 54, 24); top: 100px; width: 100%; height: 35px; position: fixed; z-index: 100;
+}
+#whoa .subhead {
+	background: rgb(121, 166, 210);
+}
+#whoa .affix-top.subhead {
+	position: relative; z-index: 102;
+}
+.subhead .header {
+	height: 35px; line-height: 35px; font-size: 16px; font-weight: bold; margin-left: 13px; float: left;
+}
+.subhead .editor-on-duty {
+	height: 35px; color: rgb(249, 66, 29); line-height: 35px; font-size: 14px; margin-right: 12px; float: right;
+}
+header {
+	color: rgb(255, 255, 255);
+}
+header a {
+	color: rgb(255, 255, 255);
+}
+.item {
+	position: relative; background-color: rgba(255, 255, 255, 0.95);
+}
+.affix.subhead {
+	position: fixed;
+}
+.subheader {
+	padding: 4px 15px; color: rgb(153, 153, 153); text-transform: uppercase; font-size: 14px; background-color: rgba(255, 255, 255, 0.7);
+}
+.editors-on-duty {
+	background: rgb(249, 66, 29); color: rgb(255, 255, 255); padding-left: 69px;
+}
+.editors-on-duty .submit-link {
+	top: 2px; color: rgb(255, 255, 255); font-size: 15px; margin-left: 10px; position: relative;
+}
+.editors-on-duty .submit-link a {
+	color: rgb(255, 255, 255);
+}
+.editors-on-duty .editors-on-duty-text {
+	line-height: 11px;
+}
+.editors-on-duty .editors-on-duty-text .names {
+	top: 1px; overflow: hidden; display: inline-block; white-space: nowrap; position: relative; -ms-text-overflow: ellipsis; max-width: 43%;
+}
+.submit-form {
+	padding: 0.5em 0px; text-transform: none;
+}
+.submit-form-thanks {
+	padding: 0.5em 0px; text-transform: none;
+}
+.submit-form .cancel {
+	color: white; opacity: 0.6; text-shadow: none;
+}
+.submit-form .cancel:hover {
+	opacity: 1;
+}
+.submit-form form {
+	margin-bottom: 0px;
+}
+.sidebar {
+	background: rgba(255, 255, 255, 0.9); width: 330px; font-size: 15px; float: left;
+}
+.sidebar .padded {
+	padding: 15px;
+}
+.sidebar .about ul {
+	margin: 0px; list-style-type: none;
+}
+.sidebar .about .link {
+	font-size: 15px;
+}
+.sidebar .image_credit {
+	padding: 5px 15px; color: rgb(153, 153, 153); line-height: 12px; font-size: 12px;
+}
+.sidebar .image_url img {
+	width: 100%;
+}
+.display-ad {
+	width: 300px; height: 250px;
+}
+.mobile.display-ad {
+	padding: 0px 10px 15px; height: 50px;
+}
+.app-promo {
+	margin-bottom: 0px; display: none; position: relative; z-index: 999; background-color: rgb(255, 255, 255);
+}
+.app-promo .close {
+	top: 10px; right: 10px; position: absolute; z-index: 9999;
+}
+.app-promo .app-promo-container {
+	padding: 10px; border-bottom-color: rgb(231, 145, 106); border-bottom-width: 1px; border-bottom-style: dotted; background-color: rgb(250, 238, 233);
+}
+.app-promo .app-promo-container .message {
+	position: relative;
+}
+.app-promo .button {
+	top: 30px; right: 0px; position: absolute;
+}
+.app-promo .button .btn-mini {
+	text-transform: uppercase;
+}
+.app-promo .icon {
+	width: 50px; float: left; position: relative;
+}
+.app-promo .text {
+	margin: auto 60px auto 50px; line-height: 1.2em;
+}
+.app-promo .text {
+	margin: auto 60px auto 50px; line-height: 1.2em;
+}
+.app-promo .message-ios {
+	display: none;
+}
+.app-promo .message-android {
+	display: none;
+}
+.app-promo .message-generic .text {
+	margin-right: 65px;
+}
+.app-promo .message-generic .button {
+	width: 50px; right: 15px;
+}
+.app-promo .message-generic .btn-mini {
+	width: 100%; margin-bottom: 5px;
+}
+.app-promo-sidebar .store-buttons {
+	margin: 10px 0px 30px; clear: both;
+}
+.app-promo-sidebar .store-button {
+	width: 28%; margin-right: 10px; float: left;
+}
+.item {
+	border-bottom-color: rgb(247, 248, 249); border-bottom-width: 6px; border-bottom-style: solid;
+}
+.item h2 {
+	font-weight: normal;
+}
+.item h3 {
+	font-weight: normal;
+}
+.item h2 {
+	overflow: hidden;
+}
+.item time {
+	top: 17px; width: 60px; text-align: center; font-size: 15px; position: absolute; z-index: 1;
+}
+.has-tweet.item h2 {
+	height: 118px; margin-bottom: 5px; position: relative;
+}
+.has-tweet.item .cell {
+	padding-top: 4px;
+}
+.has-tweet.item h2.expanded {
+	margin-bottom: -5px; min-height: 130px;
+}
+.has-tweet.item .headline {
+	padding-top: 2px; margin-top: -18px;
+}
+.has-media.has-tweet.item .headline {
+	width: 80%; margin-top: -18px; position: absolute;
+}
+.has-tweet.item .expanded .headline {
+	transition:0.5s; bottom: 6px; margin-top: -6px; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease;
+}
+.has-tweet.item iframe.twitter-tweet {
+	width: 100%;
+}
+.has-tweet.item blockquote.twitter-tweet {
+	margin-top: 28px;
+}
+.item .tweet-trigger {
+	outline: 0px; left: 68px; top: 0px; width: 85%; height: 130px; text-decoration: none; display: none; position: absolute; opacity: 0.5; background-color: rgb(255, 255, 255);
+}
+.item .tweet-trigger:hover {
+	outline: 0px; border: 0px currentColor; border-image: none; text-decoration: none;
+}
+.has-tweet.item .tweet-trigger {
+	display: block;
+}
+.item-permalink .tweet-trigger {
+	display: none !important;
+}
+.item-permalink .has-tweet.item .cell {
+	padding-top: 0px;
+}
+.item-permalink .has-tweet.item h2 {
+	height: auto; margin-bottom: 0px;
+}
+.item-permalink .has-tweet.item .headline {
+	bottom: 0px; position: relative;
+}
+.item-permalink .has-media.has-tweet.item .headline {
+	margin-top: 0px;
+}
+.item-permalink .has-tweet.item blockquote.twitter-tweet {
+	margin-top: 15px;
+}
+.item .whoa {
+	top: 41px; width: 60px; right: 0px; margin-top: 20px; position: absolute;
+}
+.item .headline {
+	margin: 6px 70px 0px; width: 75%; line-height: 1.2em; padding-top: 8px; font-size: 20px; display: inline-block;
+}
+.has-media.item .headline {
+	margin-top: 6px;
+}
+.item-permalink .item .headline {
+	margin-top: 0px;
+}
+.item-permalink .item time.full-timestamp {
+	margin: 0px 70px 20px; width: 75%; text-align: left; color: rgb(164, 182, 196); line-height: 1em; display: block !important; visibility: visible; position: relative;
+}
+.favorite.item .headline {
+	font-weight: bold;
+}
+.item .meta {
+	margin: -6px 70px 0px; text-transform: lowercase; line-height: 18px; padding-bottom: 9px; font-size: 16px; text-decoration: none;
+}
+.has-tweet.item .meta {
+	margin-top: -4px;
+}
+.item .link.meta .domain {
+	text-decoration: underline;
+}
+.item .meta .disclaimer {
+	margin: -2px 4px 0px -8px; padding: 8px; text-transform: lowercase; display: inline-block;
+}
+.item .meta .disclaimer-text {
+	text-transform: none; display: none;
+}
+.item .meta .label {
+	text-transform: uppercase; font-weight: normal;
+}
+.item .meta .readmore {
+	margin: 0px 7px 0px -8px; padding: 8px; display: inline-block;
+}
+.type-noresults.item {
+	border: currentColor; border-image: none; min-height: 308px;
+}
+.item .media {
+	background-position: center; margin: 0px; transition:height 0.5s, opacity 0.5s; width: inherit; height: 150px; display: block; position: relative; cursor: pointer; opacity: 1; background-repeat: no-repeat; background-size: 100% auto; background-color: rgb(204, 204, 204); -webkit-transition: height 0.5s ease, opacity 0.5s ease; -moz-transition: height 0.5s ease, opacity 0.5s ease; -o-transition: height 0.5s ease, opacity 0.5s ease;
+}
+.photogrid-thumbnail {
+	background-position: center; margin: 0px; transition:height 0.5s, opacity 0.5s; width: inherit; height: 150px; display: block; position: relative; cursor: pointer; opacity: 1; background-repeat: no-repeat; background-size: 100% auto; background-color: rgb(204, 204, 204); -webkit-transition: height 0.5s ease, opacity 0.5s ease; -moz-transition: height 0.5s ease, opacity 0.5s ease; -o-transition: height 0.5s ease, opacity 0.5s ease;
+}
+.item .media:hover {
+	opacity: 0.8;
+}
+#whoa .photogrid-thumbnail {
+	border: 5px solid rgb(255, 255, 255); transition:opacity 0.5s; border-image: none; width: 33.3%; height: 90px; float: left; position: relative; max-height: 90px; max-width: 33.3%; box-sizing: border-box; opacity: 1; -moz-box-sizing: border-box; -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+#whoa .active.photogrid-thumbnail {
+	border: 5px solid rgb(164, 182, 196); border-image: none;
+}
+#whoa .photogrid-thumbnail:hover {
+	transition:opacity 0.5s; opacity: 0.8; -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.expanded.media {
+	height: auto; opacity: 1 !important;
+}
+.expanded .tweet.headline {
+	height: auto; opacity: 1 !important;
+}
+.item-permalink .media {
+	height: auto !important; opacity: 1 !important;
+}
+.item-permalink .tweet {
+	height: auto !important; opacity: 1 !important;
+}
+.video.media {
+	background-image: url("../images/video-thumbnail.png");
+}
+.video.media::after {
+	left: 45%; top: 45%; color: white; font-size: 3em; position: absolute; z-index: 9; content: "?";
+}
+.video.photogrid-thumbnail::after {
+	left: 45%; top: 45%; color: white; font-size: 2em; position: absolute; z-index: 9; content: "?";
+}
+.item-permalink .video.media::after {
+	content: "";
+}
+.video.expanded.media::after {
+	content: "";
+}
+.expanded.video.media {
+	background-image: none !important;
+}
+.media img {
+	display: block; max-width: 100%; opacity: 0;
+}
+.media .embedwrapper {
+	height: 0px; overflow: hidden; padding-top: 30px; padding-bottom: 56.25%; position: relative;
+}
+.type-live-video .media .embedwrapper {
+	padding-top: 0px;
+}
+.media .embedwrapper iframe {
+	transition:opacity 0.5s; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; opacity: 0; -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease;
+}
+.media .embedwrapper object {
+	transition:opacity 0.5s; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; opacity: 0; -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease;
+}
+.media .embedwrapper embed {
+	transition:opacity 0.5s; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; opacity: 0; -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; -o-transition: opacity 0.5s ease;
+}
+.item-permalink .media .embedwrapper iframe {
+	opacity: 1;
+}
+.expanded.media .embedwrapper iframe {
+	opacity: 1;
+}
+.item-permalink .media .embedwrapper object {
+	opacity: 1;
+}
+.expanded.media .embedwrapper object {
+	opacity: 1;
+}
+.item-permalink .media .embedwrapper embed {
+	opacity: 1;
+}
+.expanded.media .embedwrapper embed {
+	opacity: 1;
+}
+h3.topic {
+	line-height: 1em; padding-top: 4px; margin-bottom: -8px; position: relative;
+}
+h3.topic a {
+	display: block;
+}
+h3.topic .top.tooltip {
+	top: -28px !important;
+}
+li.topic .top.tooltip {
+	top: -30px !important;
+}
+.topic .tooltip > .tooltip-inner {
+	background-color: rgb(102, 102, 102);
+}
+.topic .tooltip > .tooltip-arrow {
+	border-top-color: rgb(102, 102, 102);
+}
+h3.topic .topic-name {
+	margin: 0px 70px; padding: 8px 0px; width: 75%; text-transform: uppercase; line-height: 1.2em; letter-spacing: 0.08em; font-size: 14px; display: inline-block; position: relative;
+}
+h3.collapsed.topic {
+	padding-bottom: 6px;
+}
+h3.topic a.favorite {
+	left: 0px; top: 0px; width: 60px; text-align: center; line-height: 40px; font-size: 16px; display: inline-block; position: absolute;
+}
+h3.topic a.mute {
+	top: 0px; width: 60px; text-align: center; right: 0px; line-height: 40px; font-size: 16px; display: inline-block; position: absolute;
+}
+.has-media.item h3.topic {
+	margin-bottom: 0px;
+}
+.has-tweet.item h3.topic {
+	margin-bottom: 0px;
+}
+.has-media.item h3.topic .topic-name {
+	padding-bottom: 10px;
+}
+.type-live-video.item h3.topic .topic-name {
+	padding-bottom: 10px;
+}
+.type-live-video h3.topic {
+	background-color: rgb(250, 238, 233);
+}
+.type-live-video .collapse-content {
+	top: 38px; width: 60px; text-align: center; position: absolute;
+}
+.type-live-video .collapse-content {
+	transition-property: transform; transition-duration: 0.3s; -webkit-transition-property: -webkit-transform; -moz-transition-property: -moz-transform; -o-transition-property: -o-transform; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -o-transition-duration: 0.3s;
+}
+.type-live-video .rotate.collapse-content {
+	transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg);
+}
+.type-live-video h2 .headline {
+	padding-top: 11px; font-size: 16px;
+}
+.type-live-video.item .expanded .embedwrapper::after {
+	display: none;
+}
+.type-live-video.item h3.topic {
+	background-color: rgb(250, 238, 233) !important;
+}
+.type-live-video.item h3.topic a {
+	color: rgb(152, 170, 185) !important;
+}
+.type-live-video.item h3.topic a.glyph {
+	color: rgb(164, 182, 196) !important;
+}
+.type-live-video.item div.cell {
+	color: rgb(194, 67, 10) !important; background-color: rgb(250, 238, 233) !important;
+}
+.type-live-video.item .tweet-trigger {
+	opacity: 0.1; background-color: rgb(250, 238, 233) !important;
+}
+.type-live-video.item h3.topic a:hover {
+	color: rgb(221, 54, 24) !important;
+}
+.type-live-video.item .whoa-button {
+	background-color: rgb(209, 215, 215) !important;
+}
+.type-live-video.item .headline a {
+	color: rgb(194, 67, 10) !important; text-decoration: none; border-bottom-color: rgb(194, 67, 10) !important; border-bottom-width: 1px !important; border-bottom-style: dotted !important;
+}
+.type-live-video.item .headline a:visited {
+	color: rgb(194, 67, 10) !important; text-decoration: none; border-bottom-color: rgb(194, 67, 10) !important; border-bottom-width: 1px !important; border-bottom-style: dotted !important;
+}
+.type-live-video.item div.cell .meta a {
+	color: rgb(194, 67, 10) !important;
+}
+.type-live-video.item .relative-timestamp {
+	color: rgb(194, 67, 10) !important;
+}
+.type-live-video.item .share-drawer a {
+	color: rgb(194, 67, 10) !important;
+}
+.type-live-video.item div.cell .tweet.headline {
+	opacity: 1;
+}
+.type-live-video.item .headline a:hover {
+	color: rgb(249, 66, 29) !important; text-decoration: none; border-bottom-color: rgb(249, 66, 29) !important; border-bottom-width: 1px !important; border-bottom-style: dotted !important; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.type-live-video.item div.cell .meta a:hover {
+	color: rgb(249, 66, 29) !important; text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance5 .relative-timestamp:hover {
+	color: rgb(249, 66, 29) !important; text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.type-live-video.item .share-drawer a:hover {
+	color: rgb(249, 66, 29) !important; text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.topic-list ul {
+	margin: 0px; list-style-type: none;
+}
+li.topic {
+	height: 32px; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid; position: relative; background-color: rgb(226, 235, 242);
+}
+li:last-child.topic {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+li.topic a {
+	display: block;
+}
+li.topic a.favorite {
+	left: 0px; top: 0px; width: 40px; text-align: center; line-height: 34px; font-size: 14px; position: absolute;
+}
+li.topic a.topic-name {
+	left: 38px; top: 8px; width: 75%; color: rgb(119, 132, 149); text-transform: uppercase; line-height: 16px; letter-spacing: 0.08em; overflow: hidden; font-size: 14px; display: inline-block; white-space: nowrap; position: absolute; -ms-text-overflow: ellipsis;
+}
+li.topic a.mute {
+	top: 0px; width: 40px; text-align: center; right: 0px; line-height: 34px; font-size: 14px; position: absolute;
+}
+li.topic a.glyph {
+	color: rgb(134, 148, 166);
+}
+li.topic a.glyph:hover {
+	outline: 0px; color: rgb(221, 54, 24);
+}
+li.topic a:hover {
+	outline: 0px; color: rgb(221, 54, 24);
+}
+li.topic a.active.glyph {
+	color: rgb(221, 54, 24);
+}
+.topjump {
+	margin-top: 4px;
+}
+.fullnames.topic-list li.topic {
+	height: auto;
+}
+.fullnames.topic-list li.topic a.topic-name {
+	top: 9px; line-height: 16px; overflow: visible; padding-bottom: 18px; white-space: normal; position: relative;
+}
+.filed-under.fullnames.topic-list li.topic a.topic-name {
+	top: 8px;
+}
+.item-permalink {
+	margin-bottom: 35px;
+}
+.item-permalink h3.topic {
+	display: none;
+}
+.item-permalink .item {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.item-permalink .item .headline {
+	line-height: 1em; font-size: 34px; font-weight: bold;
+}
+.item-permalink .item .disclaimer {
+	display: block;
+}
+.item-permalink .item .disclaimer-text {
+	margin-left: 10px; display: inline;
+}
+.item-permalink .item .meta {
+	margin-bottom: 0px;
+}
+.item-permalink .item time {
+	margin-top: -2px;
+}
+.item-permalink .deleted.item a time {
+	margin-top: -12px;
+}
+.item-permalink .item .cell .whoa-button {
+	top: 56px;
+}
+.before-item.stream {
+	bottom: 100%; margin-bottom: 35px; display: none; position: absolute;
+}
+.item-alert {
+	padding: 10px 15px; color: rgb(185, 74, 72); text-transform: uppercase; line-height: 14px; font-size: 13px; background-color: rgb(242, 222, 222);
+}
+.extended .subheader {
+	border-top-left-radius: 4px; border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px; -moz-border-radius-topleft: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topright: 4px;
+}
+.extended .topic-list ul {
+	margin-bottom: 0px;
+}
+.extended li.topic {
+	background-color: rgb(212, 221, 228);
+}
+.stream {
+	background: rgba(255, 255, 255, 0.7);
+}
+.stream .mutedbutton {
+	padding: 10px 10px 0px;
+}
+.stream .morecontainer {
+	margin: 15px 10px 10px;
+}
+.stream .more a.btn {
+	outline: 0px; border-radius: 4px; color: rgb(255, 255, 255); padding-top: 18px; padding-bottom: 18px; font-family: "ProximaNova", helvetica, arial, sans-serif; font-size: 18px; font-weight: bold; text-shadow: none; background-image: none; background-color: rgb(253, 90, 37); -webkit-border-radius: 4px; -moz-border-radius: 4px;
+}
+.stream .more a.btn:hover {
+	text-decoration: underline; background-color: rgb(253, 130, 90);
+}
+.before-item.stream .more {
+	margin: 0px;
+}
+div.mutedbutton p {
+	background: rgb(210, 210, 210); padding: 18px; border-radius: 4px; text-align: center; color: rgb(255, 255, 255); font-size: 18px; font-weight: bold; margin-bottom: 0px; -webkit-border-radius: 4px; -moz-border-radius: 4px;
+}
+.cell {
+	position: relative;
+}
+.whoa-button {
+	background: url("../svg/whoaface.svg") no-repeat 80% 80% / 50% rgb(164, 182, 196); outline: 0px !important; border-radius: 125% 125% 0px; width: 30px; height: 30px; display: block; cursor: pointer; -webkit-border-radius: 125%; -moz-border-radius: 125%; -webkit-border-bottom-right-radius: 0; -moz-border-radius-bottomright: 0;
+}
+.cell .whoa-button {
+	top: 22px; right: 15px; position: absolute; z-index: 9;
+}
+.cell .whoa-button:hover {
+	background-color: rgb(164, 182, 196);
+}
+.whoa-total {
+	top: 0px; width: 50px; height: 50px; right: 0px; display: none; position: absolute;
+}
+.item-permalink .whoa-expand .whoa-total {
+	top: 85px;
+}
+.whoa-total .glyph-talk-square {
+	left: 0px; top: 0px; color: rgb(255, 255, 255); font-size: 38px; position: absolute;
+}
+.whoa-total .whoa-count {
+	margin: 0px auto; top: 11px; width: 38px; text-align: center; color: rgb(139, 182, 219); font-size: 16px; position: absolute;
+}
+.whoa-total .whoa-text {
+	left: 10%; text-align: center; bottom: 7px; color: rgb(139, 182, 219); font-size: 9px; position: absolute;
+}
+.whoa-count {
+	font-weight: bold;
+}
+.extended {
+	margin: 0px 70px;
+}
+.share-drawer {
+	background: rgb(212, 221, 228); height: 36px; text-align: center; margin-top: 10px; border-bottom-color: rgb(226, 235, 242); border-bottom-width: 2px; border-bottom-style: solid; display: none; border-top-left-radius: 10px; border-top-right-radius: 10px; -webkit-border-top-left-radius: 10px; -moz-border-radius-topleft: 10px; -webkit-border-top-right-radius: 10px; -moz-border-radius-topright: 10px;
+}
+.share-drawer .glyph-share {
+	margin: 0px 5px; line-height: 32px; font-size: 16px;
+}
+.share-drawer a {
+	color: rgb(255, 255, 255); font-size: 15px;
+}
+.share-drawer a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.item-permalink .related-topics {
+	display: block;
+}
+.item-permalink .share-drawer {
+	display: block;
+}
+.permalinks .adblock {
+	background: rgba(255, 255, 255, 0.9); position: fixed;
+}
+.permalinks .app-promo-container {
+	background: rgba(255, 255, 255, 0.9); width: 330px; margin-top: 308px; position: fixed;
+}
+.whoa-expand .whoa-total {
+	top: 50px; display: block;
+}
+.whoa-expand .share-drawer {
+	display: block;
+}
+.whoa-expand .cell .whoa-button {
+	background-color: rgb(139, 182, 219);
+}
+#whoa .photogrid {
+	background: rgb(255, 255, 255); padding: 5px; width: 100%; float: left; position: relative; box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.subhead-divider {
+	background: rgb(164, 182, 196); padding: 5px 0px 5px 69px; height: 18px; color: rgb(255, 255, 255); text-transform: uppercase; line-height: 18px; clear: both; font-weight: normal;
+}
+.hot-topics .subheader {
+	background: rgb(164, 182, 196); color: rgb(255, 255, 255);
+}
+.quick-update {
+	background: rgb(216, 225, 230); margin: 0px; padding: 25px 25px 25px 50px;
+}
+.quick-update li {
+	padding: 10px 0px; color: rgb(104, 105, 101);
+}
+.search .search-results {
+	background: white; padding: 2em 0px; margin-bottom: 2em;
+}
+.search .search-result {
+	padding: 0px 70px; margin-bottom: 10px; position: relative;
+}
+.search .search-result h3 {
+	line-height: 1.2em;
+}
+.search .search-result h3 {
+	display: inline-block;
+}
+.search .search-result p {
+	display: inline-block;
+}
+.search .search-result p {
+	margin-left: 0.5em;
+}
+.search .search-result time {
+	left: 0px; top: 2px; width: 60px; text-align: center; color: rgb(164, 182, 196); position: absolute;
+}
+.search .search-result .count {
+	color: rgb(102, 102, 102); margin-left: 15px; display: inline; white-space: nowrap;
+}
+.search .search-result .count .num {
+	font-weight: bold;
+}
+.search .search-more {
+	padding-left: 70px; margin-top: 2em;
+}
+.topic-stats {
+	padding: 4px 15px;
+}
+.topic-stats .graph {
+	margin-bottom: 1em;
+}
+.topic-stats p {
+	margin: 0.4em 0px;
+}
+.topic-stats table {
+	margin-top: 1em; display: none;
+}
+.topic-stats th {
+	padding: 4px 15px 4px 0px;
+}
+.topic-stats td {
+	padding: 4px 15px 4px 0px;
+}
+.topic-stats .subheader {
+	padding: 4px 0px;
+}
+#about {
+	background: white;
+}
+#about .pagetitle h1 {
+	width: 150px;
+}
+#about .row {
+	margin: 0px 70px;
+}
+#about .row h1 {
+	padding: 1em 0px;
+}
+#about .row h2 {
+	padding: 1em 0px;
+}
+#about p {
+	line-height: 1.25em;
+}
+#about .about-bn {
+	background: rgb(66, 67, 63); padding: 70px 0px; color: rgb(255, 255, 255); font-size: 1.25em;
+}
+#about .about-bn .benefits .span2 {
+	text-align: center;
+}
+#about .about-bn .benefits .span2 h2 {
+	padding: 0px; color: rgb(249, 66, 29); line-height: 1em; font-size: 32px;
+}
+#about .about-bn .benefits .span2 h2 .glyph {
+	color: rgb(255, 255, 255); line-height: 1.5em; font-size: 32px;
+}
+#about .about-bn .benefits p {
+	padding: 0px 0px 1em;
+}
+#about .about-bn .benefits .fine-print {
+	font-size: 14px; display: block;
+}
+.about-bn .responsive-video {
+	width: 1280px; max-width: 100%;
+}
+.about-bn .responsive-video .youtube-video {
+	height: 0px; overflow: hidden; padding-top: 30px; padding-bottom: 56.25%; position: relative;
+}
+.about-bn .responsive-video .youtube-video iframe {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;
+}
+.about-bn .responsive-video .youtube-video object {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;
+}
+.about-bn .responsive-video .youtube-video embed {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;
+}
+#about .about-blog {
+	background: rgb(164, 182, 196); padding: 100px 0px;
+}
+#about .about-faq {
+	background: rgb(221, 54, 24); padding: 100px 0px; color: rgb(255, 255, 255);
+}
+#about .about-nav {
+	list-style-type: none;
+}
+#about .about-nav li {
+	float: left;
+}
+#about .about-nav li a {
+	margin-top: -4px;
+}
+.nav > li.topjump > a:hover {
+	background-color: transparent;
+}
+#about #about-features .benefits .span7 {
+	padding-left: 0.75em;
+}
+.about-apps {
+	padding: 100px 0px;
+}
+.about-apps .description {
+	line-height: 1.25em; font-size: 1em;
+}
+.about-apps .description .show-screenshots {
+	font-size: 14px; margin-top: 1.4em;
+}
+.about-apps .app_page .subnav ul {
+	margin: 0px; padding: 100px 0px 0px; width: 100%; text-align: center; display: inline; list-style-type: none;
+}
+.about-apps .app_page .subnav ul a {
+	margin: 0px auto; padding: 0px;
+}
+.about-apps .app_page .subnav li {
+	text-align: center; margin-top: 2em;
+}
+.about-apps .app_page .subnav li a.mobile_link {
+	margin: 0px auto; width: 33%; height: 250px; text-align: center; display: block; min-width: 200px;
+}
+.about-apps .app_page .iphone_link {
+	background-position: top; background-image: url("../images/apps/icon_iphone.png"); background-repeat: no-repeat;
+}
+.about-apps .app_page .android_link {
+	background-position: top; background-image: url("../images/apps/icon_android.png"); background-repeat: no-repeat;
+}
+.about-apps .app_page .kindle_link {
+	background-position: top; width: 160px !important; background-image: url("../images/apps/icon_kindle-fire.png"); background-repeat: no-repeat;
+}
+.about-apps .app_page .windows_link {
+	background-position: top; background-image: url("../images/apps/icon_windowsphone7.png"); background-repeat: no-repeat;
+}
+.about-apps .app_page .windows_eight {
+	background-position: center; background-image: url("../images/apps/icon_windows_surface.png"); background-repeat: no-repeat;
+}
+.about-apps .app_page .samsung_tv {
+	background-position: center; background-image: url("../images/apps/icon_samsung_tv.png"); background-repeat: no-repeat;
+}
+.about-apps .app_page .subnav li a:hover {
+	background-color: transparent;
+}
+.about-apps .app_page .subnav li a.mobile_link:hover {
+	opacity: 0.5; background-color: rgb(238, 238, 238); -webkit-transition: opacity 0.3s;
+}
+.about-apps .app_page .screenshots li {
+	display: inline; list-style-type: none;
+}
+.about-apps .app_page ul.screenshots {
+	width: 1400px; height: 480px; margin-top: 1.5em; margin-left: 0px;
+}
+.about-apps .app_page ul.windows8screens.screenshots {
+	width: 1580px;
+}
+.about-apps .app_page ul.wp7screens.screenshots {
+	width: 1580px;
+}
+.about-apps .app_page ul.samsungtvscreens.screenshots {
+	width: 3400px;
+}
+.about-apps .app_page ul.iphonescreens.screenshots {
+	width: 1900px;
+}
+.app_page ul.ipadscreens.screenshots {
+	width: 1900px;
+}
+.about-apps .app_page .screenshot_scroll {
+	margin: 0px; padding: 0px; height: 500px; -ms-overflow-x: scroll; -ms-overflow-y: hidden;
+}
+.about-apps .app_page .smalltext {
+	font-size: 0.75em;
+}
+.about-apps .app_page .page_break {
+	margin: 0px 100px 80px 0px; padding: 0px; width: 100%; height: 80px; overflow: visible !important; clear: both; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted; position: relative;
+}
+.about-apps .app_page .page_break img {
+	left: 50%; top: 70px; position: absolute;
+}
+.about-apps .app_page .call_to_action {
+	margin: 0px 0px 20px 20px; border-radius: 0.5em; width: 200px; text-align: center; font-size: 14px;
+}
+.about-apps .app_page .call_to_action a {
+	background: rgb(221, 54, 24); padding: 10px; border-radius: 0.5em; border: 1px solid rgb(204, 204, 204); border-image: none; color: rgb(255, 255, 255); letter-spacing: 0.2em; font-weight: bold; display: block;
+}
+.about-apps .app_page .call_to_action a:hover {
+	background: rgb(102, 102, 102); border: 1px solid black; border-image: none; color: rgb(204, 204, 204); text-decoration: none;
+}
+.about-apps .app_page .iphonepreview {
+	color: rgb(98, 165, 232);
+}
+.app_page .ipadpreview {
+	color: rgb(98, 165, 232);
+}
+.about-apps .app_page .iphonepreview:hover {
+	color: rgb(51, 102, 153);
+}
+.app_page .ipadpreview:hover {
+	color: rgb(51, 102, 153);
+}
+.about-apps .app_page .active {
+	color: rgb(51, 102, 153); text-decoration: underline;
+}
+.about-apps .end-tag {
+	padding-top: 1em; clear: both;
+}
+.about-blog {
+	color: rgb(255, 255, 255);
+}
+.about-blog h2 {
+	color: rgb(131, 152, 169);
+}
+.about-blog .blog-post {
+	padding: 1.5em 0px; margin-bottom: 1.5em; border-top-color: rgb(131, 152, 169); border-bottom-color: rgb(131, 152, 169); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.about-blog .blog-headline {
+	margin-bottom: 0.5em;
+}
+.about-blog .blog-meta {
+	color: rgb(131, 152, 169); font-size: 14px; margin-top: 0.5em;
+}
+.about-blog a {
+	color: rgb(99, 119, 135);
+}
+.about-blog a:hover {
+	color: rgb(255, 255, 255);
+}
+.about-blog .blog-link {
+	padding-top: 1.5em; margin-top: 1.5em; border-top-color: rgb(131, 152, 169); border-top-width: 1px; border-top-style: solid;
+}
+.about-partners {
+	padding: 100px 0px;
+}
+.about-partners a {
+	
+}
+.about-partners blockquote.pullquote {
+	padding: 0px 1em; font-size: 28px; float: right;
+}
+.about-partners .embed_tweet {
+	margin: 1em 0px;
+}
+.about-faq a {
+	color: rgb(6, 8, 8);
+}
+.about-faq a:hover {
+	color: rgb(255, 255, 255);
+}
+#about .about-faq .team h2 {
+	margin: 0px; padding: 0px; line-height: 1.25em;
+}
+#about .about-faq .team h3 {
+	margin: 0px; padding: 0px; line-height: 1.25em;
+}
+#about .about-faq .team h4 {
+	margin: 0px; padding: 0px; line-height: 1.25em;
+}
+#about .about-faq .team {
+	margin-bottom: 1.5em;
+}
+#about .about-faq .team h3.role {
+	font-weight: normal;
+}
+#about .about-faq .team h4.location {
+	font-weight: normal;
+}
+.item .meta {
+	color: rgb(204, 204, 204);
+}
+.item .meta a.readmore {
+	color: rgb(249, 66, 29);
+}
+.importance0 h3.topic {
+	background-color: rgb(255, 255, 255) !important;
+}
+.importance0 h3.topic a {
+	color: rgb(152, 170, 185) !important;
+}
+.importance0 .whoa-total .glyph-talk-square {
+	color: rgb(237, 240, 243) !important;
+}
+.importance0 .headline a {
+	color: rgb(152, 170, 185) !important; text-decoration: none; border-bottom-color: rgb(152, 170, 185) !important; border-bottom-width: 1px !important; border-bottom-style: dotted !important;
+}
+.importance0 .headline a:visited {
+	color: rgb(152, 170, 185) !important; text-decoration: none; border-bottom-color: rgb(152, 170, 185) !important; border-bottom-width: 1px !important; border-bottom-style: dotted !important;
+}
+.importance0 h3.topic a.glyph {
+	color: rgb(164, 182, 196) !important;
+}
+.importance0.item div.cell {
+	color: rgb(164, 182, 196) !important; background-color: rgb(255, 255, 255) !important;
+}
+.importance0.item .tweet-trigger {
+	background-color: rgb(255, 255, 255) !important;
+}
+.importance0 .whoa-button {
+	background-color: rgb(209, 215, 215) !important;
+}
+.importance0.item div.cell .meta a {
+	color: rgba(213, 145, 115, 0.8) !important;
+}
+.importance0 .relative-timestamp {
+	color: rgba(213, 145, 115, 0.8) !important;
+}
+.importance0 .share-drawer a {
+	color: rgba(213, 145, 115, 0.8) !important;
+}
+.importance0 .headline a:hover {
+	color: rgb(249, 66, 29) !important; text-decoration: none; border-bottom-color: rgb(249, 66, 29) !important; border-bottom-width: 1px !important; border-bottom-style: dotted !important; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance0.item div.cell .meta a:hover {
+	color: rgb(249, 66, 29) !important; text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance0 .relative-timestamp:hover {
+	color: rgb(249, 66, 29) !important; text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance0 .share-drawer a:hover {
+	color: rgb(249, 66, 29) !important; text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.sidebar .importance0 h3.topic a {
+	color: rgb(152, 170, 185);
+}
+.sidebar .importance0 h3.topic a.glyph {
+	color: rgb(164, 182, 196);
+}
+.sidebar .importance0.item div.cell {
+	color: rgb(6, 8, 8); background-color: rgb(237, 240, 243);
+}
+.sidebar .importance0.item .tweet-trigger {
+	opacity: 0.1; background-color: rgb(237, 240, 243);
+}
+.sidebar .importance0 .whoa-button {
+	background-color: rgb(209, 215, 215);
+}
+.sidebar .importance0.item div.cell .meta a {
+	color: rgb(213, 145, 115);
+}
+.sidebar .importance0 .relative-timestamp {
+	color: rgb(213, 145, 115);
+}
+.sidebar .importance0.item div.cell .tweet.headline {
+	opacity: 0.9;
+}
+.sidebar .importance0 .headline a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; border-bottom-color: rgb(249, 66, 29); border-bottom-width: 1px; border-bottom-style: dotted; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.sidebar .importance0.item div.cell .meta a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.sidebar .importance0 .relative-timestamp:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance1 h3.topic {
+	background-color: rgb(255, 255, 255);
+}
+.importance1 h3.topic a {
+	color: rgb(152, 170, 185);
+}
+.importance1 h3.topic a.glyph {
+	color: rgb(164, 182, 196);
+}
+.importance1 .whoa-total .glyph-talk-square {
+	color: rgb(237, 240, 243);
+}
+.importance1.item div.cell {
+	color: rgb(136, 136, 136); background-color: rgb(255, 255, 255);
+}
+.importance1.item div.cell .headline a {
+	color: rgb(136, 136, 136);
+}
+.importance1.item .tweet-trigger {
+	background-color: rgb(255, 255, 255);
+}
+.importance1.item div.cell .share-drawer a {
+	color: rgb(213, 145, 115);
+}
+.importance1 .whoa-button {
+	background-color: rgb(209, 215, 215);
+}
+.importance1.item div.cell .meta a {
+	color: rgb(213, 145, 115); opacity: 0.8;
+}
+.importance1 .relative-timestamp {
+	color: rgb(213, 145, 115); opacity: 0.8;
+}
+.importance1.item div.cell .tweet.headline {
+	opacity: 0.8;
+}
+.importance1.item div.cell .headline a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; border-bottom-color: rgb(249, 66, 29); border-bottom-width: 1px; border-bottom-style: dotted; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance1.item div.cell .meta a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance1 .relative-timestamp:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance1 .share-drawer a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance2 h3.topic {
+	background-color: rgb(245, 246, 248);
+}
+.importance2 h3.topic a {
+	color: rgb(152, 170, 185);
+}
+.importance2 h3.topic a.glyph {
+	color: rgb(164, 182, 196);
+}
+.importance2.item div.cell {
+	color: rgb(6, 8, 8); background-color: rgb(245, 246, 248);
+}
+.importance2.item .tweet-trigger {
+	opacity: 0.1; background-color: rgb(245, 246, 248);
+}
+.importance2 .whoa-button {
+	background-color: rgb(209, 215, 215);
+}
+.importance2.item div.cell .meta a {
+	color: rgb(213, 145, 115);
+}
+.importance2 .relative-timestamp {
+	color: rgb(213, 145, 115);
+}
+.importance2 .share-drawer a {
+	color: rgb(213, 145, 115);
+}
+.importance2.item div.cell .tweet.headline {
+	opacity: 0.8;
+}
+.importance2 .headline a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; border-bottom-color: rgb(249, 66, 29); border-bottom-width: 1px; border-bottom-style: dotted; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance2.item div.cell .meta a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance2 .relative-timestamp:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance2 .share-drawer a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance3 h3.topic {
+	background-color: rgb(237, 240, 243);
+}
+.importance3 h3.topic a {
+	color: rgb(152, 170, 185);
+}
+.importance3 h3.topic a.glyph {
+	color: rgb(164, 182, 196);
+}
+.importance3.item div.cell {
+	color: rgb(6, 8, 8); background-color: rgb(237, 240, 243);
+}
+.importance3.item .tweet-trigger {
+	opacity: 0.1; background-color: rgb(237, 240, 243);
+}
+.importance3 .whoa-button {
+	background-color: rgb(209, 215, 215);
+}
+.importance3.item div.cell .meta a {
+	color: rgb(213, 145, 115);
+}
+.importance3 .relative-timestamp {
+	color: rgb(213, 145, 115);
+}
+.importance3 .share-drawer a {
+	color: rgb(213, 145, 115);
+}
+.importance3.item div.cell .tweet.headline {
+	opacity: 1;
+}
+.importance3 .headline a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; border-bottom-color: rgb(249, 66, 29); border-bottom-width: 1px; border-bottom-style: dotted; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance3.item div.cell .meta a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance3 .relative-timestamp:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance3 .share-drawer a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance4 h3.topic {
+	background-color: rgb(205, 212, 221);
+}
+.importance4 h3.topic a {
+	color: rgb(152, 170, 185);
+}
+.importance4 h3.topic a.glyph {
+	color: rgb(164, 182, 196);
+}
+.importance4.item div.cell {
+	color: rgb(6, 8, 8); background-color: rgb(205, 212, 221);
+}
+.importance4.item .tweet-trigger {
+	opacity: 0.1; background-color: rgb(205, 212, 221);
+}
+.importance4 .whoa-button {
+	background-color: rgb(164, 182, 196);
+}
+.importance4.item div.cell .meta a {
+	color: rgb(194, 67, 10);
+}
+.importance4 .relative-timestamp {
+	color: rgb(194, 67, 10);
+}
+.importance4 .share-drawer a {
+	color: rgb(194, 67, 10);
+}
+.importance4.item div.cell .meta {
+	color: rgb(153, 153, 153);
+}
+.importance4.item div.cell .tweet.headline {
+	opacity: 1;
+}
+.importance4 .headline a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; border-bottom-color: rgb(249, 66, 29); border-bottom-width: 1px; border-bottom-style: dotted; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance4.item div.cell .meta a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance4 .relative-timestamp:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance4 .share-drawer a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance5 h3.topic {
+	background-color: rgb(250, 238, 233);
+}
+.importance5 h3.topic a {
+	color: rgb(152, 170, 185);
+}
+.importance5 h3.topic a.glyph {
+	color: rgb(164, 182, 196);
+}
+.importance5.item div.cell {
+	color: rgb(194, 67, 10); background-color: rgb(250, 238, 233);
+}
+.importance5.item .tweet-trigger {
+	opacity: 0.1; background-color: rgb(250, 238, 233);
+}
+.importance5 h3.topic a:hover {
+	color: rgb(221, 54, 24);
+}
+.importance5 .whoa-button {
+	background-color: rgb(209, 215, 215);
+}
+.importance5 .headline a {
+	color: rgb(194, 67, 10); text-decoration: none; border-bottom-color: rgb(194, 67, 10); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.importance5 .headline a:visited {
+	color: rgb(194, 67, 10); text-decoration: none; border-bottom-color: rgb(194, 67, 10); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.importance5.item div.cell .meta a {
+	color: rgb(194, 67, 10);
+}
+.importance5 .relative-timestamp {
+	color: rgb(194, 67, 10);
+}
+.importance5 .share-drawer a {
+	color: rgb(194, 67, 10);
+}
+.importance5.item div.cell .tweet.headline {
+	opacity: 1;
+}
+.importance5 .headline a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; border-bottom-color: rgb(249, 66, 29); border-bottom-width: 1px; border-bottom-style: dotted; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance5.item div.cell .meta a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance5 .relative-timestamp:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importance5 .share-drawer a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importancem h3.topic {
+	background-color: rgb(255, 255, 255);
+}
+.importancem h3.topic a {
+	color: rgb(209, 215, 215);
+}
+.importancem h3.topic a.glyph {
+	color: rgb(209, 215, 215);
+}
+.importancem.item div.cell {
+	color: rgb(209, 215, 215); background-color: rgb(255, 255, 255);
+}
+.importancem .whoa-button {
+	background-color: rgb(209, 215, 215);
+}
+.importancem.item div.cell a {
+	color: rgb(209, 215, 215);
+}
+.importancem.item div.cell a:hover {
+	color: rgb(249, 66, 29);
+}
+.importancem.item div.cell .tweet.headline {
+	opacity: 1;
+}
+.importancem .headline a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; border-bottom-color: rgb(249, 66, 29); border-bottom-width: 1px; border-bottom-style: dotted; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importancem.item div.cell .meta a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.importancem .relative-timestamp:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.container .type-note h3.topic {
+	background-color: rgb(255, 255, 255);
+}
+.container .type-note h3.topic a {
+	color: rgb(164, 182, 196);
+}
+.container .type-note h3.topic a.glyph {
+	color: rgb(164, 182, 196);
+}
+.container .type-note div.cell {
+	color: rgb(96, 110, 128); background-color: rgb(255, 255, 255);
+}
+.container .type-note .whoa-total .glyph-talk-square {
+	color: rgb(237, 240, 243);
+}
+.container .type-note .headline {
+	padding-top: 11px; font-size: 16px;
+}
+.container .type-note div.cell .tweet.headline {
+	opacity: 1;
+}
+.container .type-note .headline a {
+	color: rgb(96, 110, 128); border-bottom-color: rgb(96, 110, 128); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.container .type-note .headline a:hover {
+	color: rgb(96, 110, 128); text-decoration: none; border-bottom-color: rgb(249, 66, 29); border-bottom-width: 1px; border-bottom-style: dotted; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.container .type-note div.cell .meta a:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.items .type-note .relative-timestamp:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.item-permalink .type-note .headline {
+	font-weight: normal;
+}
+.type-ad .topic-name {
+	color: rgb(76, 160, 111);
+}
+.type-ad .ad_domain a {
+	margin: 0px 7px 0px -8px; padding: 8px 8px 12px; border: 0px currentColor !important; border-image: none !important; color: rgb(158, 200, 175) !important; font-size: 16px; display: block;
+}
+.type-ad .ad_domain a:hover {
+	border: 0px currentColor !important; border-image: none !important; color: rgb(249, 66, 29) !important;
+}
+h3.topic a.glyph:hover {
+	outline: 0px; color: rgb(221, 54, 24);
+}
+h3.topic a:hover {
+	outline: 0px; color: rgb(221, 54, 24);
+}
+h3.topic a.active.glyph {
+	outline: 0px; color: rgb(221, 54, 24);
+}
+header .stream-actions a.active.glyph {
+	color: rgb(249, 66, 29);
+}
+.item div.cell .meta a.original.readmore {
+	color: rgb(204, 204, 204);
+}
+.importance4.item div.cell .meta a.original.readmore {
+	color: rgb(153, 153, 153);
+}
+.item div.cell .meta a.original.readmore:hover {
+	color: rgb(249, 66, 29); text-decoration: none; transition-property: color; transition-duration: 0.2s; transition-timing-function: ease-in-out; -webkit-transition-property: color; -moz-transition-property: color; -o-transition-property: color; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out;
+}
+.item .popover {
+	color: rgb(0, 0, 0);
+}
+.sidebar .stream.submitted .subhead-divider {
+	padding-left: 15px;
+}
+.sidebar .stream.submitted .items {
+	overflow: auto; max-height: 40em;
+}
+.sidebar .stream.submitted .item .headline {
+	margin-right: 10px;
+}
+.sidebar .stream.submitted .item .topic-name {
+	padding: 10px 0px 5px; left: 60px; text-transform: uppercase; line-height: 1.5; letter-spacing: 0.08em; font-size: 12px; margin-right: 60px; min-height: 0px;
+}
+.sidebar .stream.submitted .item .headline {
+	padding-top: 8px; font-size: 14px; margin-left: 60px;
+}
+.sidebar .stream.submitted .item time {
+	line-height: 14px; font-size: 12px; margin-top: 9px;
+}
+.sidebar .stream.submitted .item .meta {
+	line-height: 14px; padding-bottom: 5px; font-size: 12px; margin-left: 60px;
+}
+.sidebar .stream.submitted .item .whoa-button {
+	display: none;
+}
+.sidebar .stream.submitted .item .expand-button {
+	display: none;
+}
+.sidebar .stream.submitted .item .glyph {
+	display: none;
+}
+.sidebar .stream.submitted .item .edit-button {
+	top: 28px;
+}
+@media all and (min-width:1200px)
+{
+.container {
+	width: 1000px;
+}
+}
+@media all and (max-width:979px) and (min-width:768px)
+{
+.container {
+	width: 744px;
+}
+#site-header nav .user-topics input {
+	width: 146px !important;
+}
+}
+@media all and (max-width:767px)
+{
+body {
+	padding-right: 0px; padding-left: 0px;
+}
+.container {
+	width: auto;
+}
+#site-header {
+	width: 100%;
+}
+#site-header nav {
+	float: right; position: relative !important;
+}
+nav.mobileshowsearch {
+	right: 15px !important;
+}
+.search-topics .navitem {
+	margin-right: 10px;
+}
+.search-topics {
+	margin: 0px 20px 0px 0px; padding: 0px; width: 33px; height: 36px; overflow: hidden; display: block;
+}
+.search-topics .twitter-typeahead {
+	top: 2px;
+}
+nav.mobileshowsearch .search-topics {
+	margin: 0px 0px 0px -200px; width: 208px; overflow: visible;
+}
+nav.mobileshowsearch .search-topics .navitem {
+	margin-right: 0px; margin-left: -10px;
+}
+.saved-topics {
+	right: 48px; position: absolute !important;
+}
+nav.mobileshowsearch .saved-topics {
+	right: 203px; position: absolute !important;
+}
+.muted-topics {
+	right: 80px; position: absolute !important;
+}
+nav.mobileshowsearch .muted-topics {
+	right: 235px; position: absolute !important;
+}
+nav .glyph {
+	font-size: 18px !important;
+}
+#site-header nav .navitem .glyph-magnify {
+	margin-right: 12px; cursor: pointer;
+}
+body .container #site-header nav {
+	top: -3px;
+}
+.topics header .stream-actions {
+	margin-left: 53px; float: left !important;
+}
+.topics header .actions a {
+	padding-top: 1px;
+}
+header.section .pagetitle {
+	width: auto;
+}
+header.section .pagetitle h1 {
+	width: 85%;
+}
+.topics header.section .pagetitle {
+	width: 100%;
+}
+#site-header .title {
+	float: left;
+}
+#site-header nav .user-topics input {
+	width: 146px !important;
+}
+#site-header nav .user-topics .navlabel {
+	display: none !important;
+}
+#site-header nav .muted-topics.user-topics {
+	margin-right: 6px;
+}
+.sidebar {
+	width: 100%;
+}
+.subhead-divider {
+	padding-left: 15px;
+}
+.item .media {
+	height: 60px;
+}
+}
+.glyph-ME-active {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-ME-inactive {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-bookmark-bell {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-bookmark-filled-plus {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-bookmark-outline-plus {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-air-tower {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-refresh-thin-2 {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-refresh-thin {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-top-jump-outline {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-gear-outline {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-house-outline {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-check-off {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-check-on {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-double-arrows {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-radar {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-mute-outline {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-bookmark-outline {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-bell-outline {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-mute {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-star-filled {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-refresh {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-refresh-2 {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-tag {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-refresh-3 {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-share {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-arrow-left {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-arrow-right {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-arrow-down {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-arrow-up {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-moon {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-talk {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-world-africa {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-globe {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-world-america {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-mail {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-logo {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-star-empty {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-bell {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-bell-strike {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-whoa {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-muted-turned {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-top-jump {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-settings-gear {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-search-modified {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-exclamation-mark {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-sorted-list {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-home {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-twitter {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-bookmark {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-talk-square {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-close-x {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-video-play {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-swipe-right {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-swipe-left {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-magnify {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-move-bars {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-share-icon {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-android-share {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-arrow-left2 {
+	text-transform: none; line-height: 1; font-family: "breakingnews"; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.glyph-ME-active::before {
+	content: "\e612";
+}
+.glyph-ME-inactive::before {
+	content: "\e611";
+}
+.glyph-bookmark-bell::before {
+	content: "\e610";
+}
+.glyph-bookmark-filled-plus::before {
+	content: "\e60e";
+}
+.glyph-bookmark-outline-plus::before {
+	content: "\e60f";
+}
+.glyph-air-tower::before {
+	content: "\e60d";
+}
+.glyph-refresh-thin-2::before {
+	content: "\e60c";
+}
+.glyph-refresh-thin::before {
+	content: "\e60b";
+}
+.glyph-top-jump-outline::before {
+	content: "\e608";
+}
+.glyph-gear-outline::before {
+	content: "\e609";
+}
+.glyph-house-outline::before {
+	content: "\e60a";
+}
+.glyph-check-off::before {
+	content: "\e607";
+}
+.glyph-check-on::before {
+	content: "\e606";
+}
+.glyph-double-arrows::before {
+	content: "\e605";
+}
+.glyph-radar::before {
+	content: "\e604";
+}
+.glyph-mute-outline::before {
+	content: "\e603";
+}
+.glyph-bookmark-outline::before {
+	content: "\e600";
+}
+.glyph-bell-outline::before {
+	content: "\e601";
+}
+.glyph-mute::before {
+	content: "\e200";
+}
+.glyph-star-filled::before {
+	content: "\e001";
+}
+.glyph-refresh::before {
+	content: "\e086";
+}
+.glyph-refresh-2::before {
+	content: "\e082";
+}
+.glyph-tag::before {
+	content: "\e066";
+}
+.glyph-refresh-3::before {
+	content: "\e083";
+}
+.glyph-share::before {
+	content: "\e152";
+}
+.glyph-arrow-left::before {
+	content: "\e211";
+}
+.glyph-arrow-right::before {
+	content: "\e212";
+}
+.glyph-arrow-down::before {
+	content: "\e213";
+}
+.glyph-arrow-up::before {
+	content: "\e214";
+}
+.glyph-moon::before {
+	content: "\e231";
+}
+.glyph-talk::before {
+	content: "\e246";
+}
+.glyph-world-africa::before {
+	content: "\e371";
+}
+.glyph-globe::before {
+	content: "\e372";
+}
+.glyph-world-america::before {
+	content: "\e341";
+}
+.glyph-mail::before {
+	content: "\2709";
+}
+.glyph-logo::before {
+	content: "\e000";
+}
+.glyph-star-empty::before {
+	content: "\e002";
+}
+.glyph-bell::before {
+	content: "\e334";
+}
+.glyph-bell-strike::before {
+	content: "\e003";
+}
+.glyph-whoa::before {
+	content: "\e004";
+}
+.glyph-muted-turned::before {
+	content: "\e005";
+}
+.glyph-top-jump::before {
+	content: "\e182";
+}
+.glyph-settings-gear::before {
+	content: "\e137";
+}
+.glyph-search-modified::before {
+	content: "\e028";
+}
+.glyph-exclamation-mark::before {
+	content: "\e007";
+}
+.glyph-sorted-list::before {
+	content: "\e115";
+}
+.glyph-home::before {
+	content: "\e021";
+}
+.glyph-twitter::before {
+	content: "\e008";
+}
+.glyph-bookmark::before {
+	content: "\e073";
+}
+.glyph-talk-square::before {
+	content: "\e310";
+}
+.glyph-close-x::before {
+	content: "\e208";
+}
+.glyph-video-play::before {
+	content: "\e174";
+}
+.glyph-swipe-right::before {
+	content: "\e009";
+}
+.glyph-swipe-left::before {
+	content: "\e00a";
+}
+.glyph-magnify::before {
+	content: "\e006";
+}
+.glyph-move-bars::before {
+	content: "\e159";
+}
+.glyph-share-icon::before {
+	content: "\e00b";
+}
+.glyph-android-share::before {
+	content: "\e00c";
+}
+.glyph-arrow-left2::before {
+	content: "\e602";
+}
+.flippant-modal-light {
+	background: rgb(212, 221, 228); border: currentColor; border-image: none; left: 5%; top: 5%; width: 90%; height: 90%; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.share-form {
+	padding: 0px 1em; max-width: 800px;
+}
+.share-form h4 {
+	text-transform: uppercase; font-weight: normal;
+}
+.share-form h2 {
+	padding: 15px 0px; color: rgb(6, 8, 8); line-height: 1.1; font-weight: normal; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.share-form ul {
+	margin: 15px 0px 0px;
+}
+.share-form li {
+	list-style: none; padding: 5px 0px; clear: both;
+}
+.share-form li.button_fb {
+	height: 29px;
+}
+.share-form .sharelabel {
+	width: 120px; text-transform: uppercase; font-weight: normal; float: left;
+}
+.share-form .copy-url {
+	width: 17em; font-family: "ProximaNova", helvetica, arial, sans-serif; font-size: 16px;
+}
+.is_staff .whoa-total {
+	top: 50px; display: block;
+}
+.is_staff .item-permalink .whoa-total {
+	top: 85px;
+}
+.is_staff .item .headline {
+	width: 70% !important;
+}
+.admin-bar {
+	right: 0.5em; bottom: 0.5em; margin-bottom: 0px; position: fixed; z-index: 100;
+}
+.admin-buttons {
+	top: 24px; right: 62px; font-weight: normal; display: block !important; position: absolute !important;
+}
+.has-tweet .admin-buttons {
+	top: 21px;
+}
+.item-permalink .admin-buttons {
+	top: 56px;
+}
+@media not all
+{
+header.section h1 {
+	top: 3px;
+}
+.actions a {
+	padding-top: 3px;
+}
+}

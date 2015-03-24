@@ -1,0 +1,43 @@
+﻿@model DearDreamModels.ViewModel.CategoryNewsViewModel
+
+@using System.Data.Entity.ModelConfiguration.Conventions
+@using Kendo.Mvc;
+@using Kendo.Mvc.UI;
+
+@{
+    ViewBag.Title = @Model.Category;
+}
+
+<div class="row row-offcanvas row-offcanvas-right">
+
+    <div class="col-xs-10 col-sm-9">
+            <h2>@Model.Category</h2>
+            <div class="row">
+
+                @foreach(var item in Model.PreViewList)
+                {
+                    <div class="col-xs-6 col-lg-9 sidebar-offcanvas">
+                        <div>
+                            <p><a href="/Home/SingleNews/@item.Id" role="button" style="float:left">@Html.DisplayFor(modelItem => item.Title)<div style="float:right">@item.Time.ToShortDateString()</div></a></p>
+                        </div>
+                    </div><!--/.col-xs-6.col-lg-4-->
+                }
+            </div><!--/row-->
+
+
+    </div><!--/.col-xs-12.col-sm-9-->
+
+    <div class="col-sm-3" id="sidebar">
+        <div style="text-align:center">
+            <h3>为您推荐</h3>
+        </div>
+
+        @foreach (var item in Model.RecomList)
+        {
+            <div class="list-group">
+                <a href="/Home/SingleNews/@item.Id" class="list-group-item active">@item.Title</a>
+            </div>
+        }
+    </div><!--/.sidebar-offcanvas-->
+</div><!--/row-->
+

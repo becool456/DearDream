@@ -1,0 +1,12 @@
+﻿@{
+    @*<li style="float:right">@Html.ActionLink("你好，" + (string)ViewBag.LoginName + " !", "ShowUserInfo", "Account")</li>*@
+    <li class="dropdown">
+        @*<div >您好，@((string)ViewBag.LoginName)</div>*@
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">您好，@((string)ViewBag.LoginName)<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="~/Account/ShowUserInfo">修改个人信息</a></li>
+            <li><a href="~/Account/UpdatePassword">修改密码</a></li>
+        </ul>
+    </li>
+    <li style="float:right">@Html.ActionLink("注销", "LogOut", "Account")</li>
+}

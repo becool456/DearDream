@@ -1,0 +1,30 @@
+﻿@model IEnumerable<DearDreamModels.ViewModel.NewsOverViewModel>
+@using System.Data.Entity.ModelConfiguration.Conventions
+@using Kendo.Mvc;
+@using Kendo.Mvc.UI;
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+@foreach (var item in Model)
+{
+    <div class ="item">
+        <h3 class="topic">
+            <a href="/Home/Category?Category=@item.Category" class="topic-name" title="前往类别:@Html.DisplayFor(modelItem =>item.Category)">
+                @Html.DisplayFor(modelItem => item.Category)  
+                @*@Html.DisplayFor(modelItem => item.Time)*@
+            </a>
+        </h3>
+        <div class="cell">
+            <h2 class="headline">@Html.DisplayFor(modelItem => item.Title)</h2>
+            <h2 class ="headline">
+                @Html.DisplayFor(modelitem => item.Description)
+            </h2>
+            @Html.ActionLink("查看全文", "SingleNews",new {id = item.Id})
+        </div>
+    </div>
+    
+}
+

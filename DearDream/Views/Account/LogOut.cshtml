@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "LogOut";
+}
+
+<h2>注销</h2>
+
+<h3>你确定注销用户吗？</h3>
+@using (Html.BeginForm( new { returnUrl = ViewBag.returnUrl}))
+{
+   
+    <a  href=@ViewBag.returnUrl >返回</a>
+    <br/>
+    <input type="submit" value="确认注销"/>
+}

@@ -1,0 +1,13 @@
+﻿<br />
+<p>
+    <button type="button" class="btn btn-primary" value="~/Account/ShowUserInfo">个人信息中心</button>
+    <button type="button" class="btn btn-primary" value="~/Account/UpdateUserHobbies">个性化定制</button>
+    <button type="button" class="btn btn-primary" value="/Account/UpdatePassword">安全中心</button>
+</p>
+<script>
+    //页面跳转
+    $(".btn-primary").click(function () {
+        var link = $(this).val();
+        location.href = link;
+    })
+</script>

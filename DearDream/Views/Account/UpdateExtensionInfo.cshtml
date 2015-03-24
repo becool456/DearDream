@@ -1,0 +1,106 @@
+﻿@model DearDreamModels.UserExtensionInfo
+
+@{
+    ViewBag.Title = "完善个人信息";
+}
+@using Kendo.Mvc.UI;
+@using Kendo.Mvc;
+
+
+@using (Html.BeginForm())
+{
+
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>完善个人信息</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.UserId)
+        <div class="form-group">
+            <label class="control-label col-md-2">出生日期</label>
+            <div class="col-md-10">
+                <div class="col-md-10">
+                     @(Html.Kendo().DatePicker().Name("BirthTime").HtmlAttributes(new { style = "width:150px" }))
+                </div>    
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EducationlevelName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("EducationlevelName")
+                @Html.ValidationMessageFor(model => model.EducationlevelName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaritalstatusName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaritalstatusName")
+                @Html.ValidationMessageFor(model => model.MaritalstatusName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.GenderName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("GenderName")
+                @Html.ValidationMessageFor(model => model.GenderName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IndustryCategoryName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("IndustryCategoryName")
+                @Html.ValidationMessageFor(model => model.IndustryCategoryName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PronviceName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("PronviceName")
+            </div>
+        </div>
+
+
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.LocationName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Locations")
+                @Html.ValidationMessageFor(model => model.LocationName, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+        <input type="hidden" id="LocationName" name="LocationName" value="未设置"/>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="保存更改" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+
+<script>
+    $("#Provinces").change(function () {
+        var province = $("#Provinces").val();
+        var request = 'GetLocations/';
+        $.getJSON(request, { parentName: province }, function (data) {
+            $('#Locations').empty();
+            $.each(data, function (idx, item) {
+                var html = "<option value='" + item.Name + "'>" + item.Name + "</option><br/>";
+                $("#Locations").append(html);
+            })
+        })
+    })
+</script>
+

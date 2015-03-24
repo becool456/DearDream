@@ -1,0 +1,48 @@
+﻿@model DearDreamModels.ViewModel.SingleNewsViewModel
+
+@{
+    ViewBag.Title = Model.News.Title;
+}
+
+
+<div class="row row-offcanvas row-offcanvas-right">
+
+    <div class="col-xs-12 col-sm-9">
+        <h2>
+            @Model.News.Title
+        </h2>
+        <br />
+        <h4>
+            发布时间：@Model.News.Time.ToShortDateString().ToString()&nbsp;&nbsp;&nbsp;&nbsp;来源：@Model.News.Source&nbsp;&nbsp;&nbsp;&nbsp;分类：@Model.News.Category
+        </h4>
+        <br />
+        <div>
+            @Html.Raw(Model.News.Content)
+        </div>
+    </div><!--/.col-xs-12.col-sm-9-->
+
+    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+        <div style="text-align:center">
+            <h3>与此相关新闻</h3>
+        </div>
+        @foreach (var item in Model.RelatedList)
+        {
+            <div class="list-group">
+                <a href="/Home/SingleNews/@item.Id " class="list-group-item active">@item.Title</a>
+            </div>
+        }
+    @if (Model.SeenRelatedList != null)
+    {
+        <div style="text-align:center">
+            <h3>看过这条的人也看过</h3>
+        </div>
+        foreach (var item in Model.SeenRelatedList)
+        {
+            <div class="list-group">
+                <a href="/Home/SingleNews/@item.Id" class="list-group-item active">@item.Title</a>
+            </div>
+        }
+    }   
+    </div><!--/.sidebar-offcanvas-->
+
+</div><!--/row-->

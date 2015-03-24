@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title-新闻推荐系统</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Content/kendo/2014.2.903/jquery.min.js"></script>
+    <script src="~/Content/kendo.modernizr.custom.js"></script>
+    <script src="~/Content/kendo/2014.2.903/kendo.all.min.js"></script>
+    <link href="~/Content/foreign_style.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div id="navbar" class="collapse navbar-collapse">
+                <div class="nav navbar-right">
+                    <ul class="nav navbar-nav">
+                        @Html.Action("HeadSection", "DisplayPartial")
+                    </ul>
+                </div>
+            </div><!-- /.nav-collapse -->
+        </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+    <div class="title-style head row row-offcanvas row-offcanvas-right" style="background-color:#ffd700">
+        @*<div class="logo fl"><a href="{dede:global.cfg_basehost/}">新闻格子铺</a></div>*@
+        <div class="title-style">
+            <div class="col-sm-3">新闻格子铺</div>
+            <div class="tagso fr col-sm-10">
+                <div class="serach fl">
+                    <form action="{dede:field name='phpurl'/}/search.php" name="formsearch">
+                        <input type="hidden" name="kwtype" value="0" />
+                        <input name="keyword" type="text" class="search-keyword fl" id="search-keyword" value="站内搜索" onfocus="if(this.value=='站内搜索'){this.value='';}" onblur="if(this.value==''){this.value='站内搜索';}" />
+                        <button type="submit" class="search-submit fl">搜索</button>
+                    </form>
+                </div>
+                热搜：XXXX<a href='[field:link/]'></a>
+            </div>
+        </div>
+        
+        <div class="cl"></div>
+    </div>
+    @Html.Action("NewsTypes", "DisplayPartial")
+    <div class="container">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year -DearDream</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

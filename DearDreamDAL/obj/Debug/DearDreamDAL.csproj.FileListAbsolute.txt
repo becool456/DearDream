@@ -1,0 +1,14 @@
+C:\Users\Simon\documents\visual studio 2013\Projects\DearDream\DearDreamDAL\bin\Debug\DearDreamDAL.dll.config
+C:\Users\Simon\documents\visual studio 2013\Projects\DearDream\DearDreamDAL\bin\Debug\DearDreamDAL.dll
+C:\Users\Simon\documents\visual studio 2013\Projects\DearDream\DearDreamDAL\bin\Debug\DearDreamDAL.pdb
+C:\Users\Simon\documents\visual studio 2013\Projects\DearDream\DearDreamDAL\bin\Debug\DearDreamModels.dll
+C:\Users\Simon\documents\visual studio 2013\Projects\DearDream\DearDreamDAL\bin\Debug\EntityFramework.dll
+C:\Users\Simon\documents\visual studio 2013\Projects\DearDream\DearDreamDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Simon\documents\visual studio 2013\Projects\DearDream\DearDreamDAL\bin\Debug\Ninject.dll
+C:\Users\Simon\documents\visual studio 2013\Projects\DearDream\DearDreamDAL\bin\Debug\DearDreamModels.pdb
+C:\Users\Simon\documents\visual studio 2013\Projects\DearDream\DearDreamDAL\bin\Debug\EntityFramework.xml
+C:\Users\Simon\documents\visual studio 2013\Projects\DearDream\DearDreamDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Simon\documents\visual studio 2013\Projects\DearDream\DearDreamDAL\bin\Debug\Ninject.xml
+C:\Users\Simon\documents\visual studio 2013\Projects\DearDream\DearDreamDAL\obj\Debug\DearDreamDAL.csprojResolveAssemblyReference.cache
+C:\Users\Simon\documents\visual studio 2013\Projects\DearDream\DearDreamDAL\obj\Debug\DearDreamDAL.dll
+C:\Users\Simon\documents\visual studio 2013\Projects\DearDream\DearDreamDAL\obj\Debug\DearDreamDAL.pdb

@@ -1,0 +1,32 @@
+﻿@model DearDream.ViewModel.UserHobbyMapViewModel
+
+@{
+    ViewBag.Title = "个性化定制";
+}
+
+@Html.Partial("UserBackStageSelection")
+
+<form action="/Account/UpdateUserHobbies" method="post" >
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h4>选择你所关注的方向</h4>
+        @Html.HiddenFor( model => model.UserId)
+        <hr />
+        <div class="form-group" id="drop-change-event">
+            @foreach (var item in Model.HobbySelctions)
+            {
+                if (Model.Hobbies.Any(o => o.Id == item.Id))
+                {
+                    <label><input type="checkbox" value="@item.Id" name="Hobbies" checked="checked">@item.Name</label><br />
+                }
+                else
+                {
+                    <label><input type="checkbox" value="@item.Id" name="Hobbies">@item.Name</label><br />
+                }
+
+            }
+        </div>
+    </div>
+    <input type="submit" value="保存" />
+    @Html.Partial("UpdateInfo")
+</form>

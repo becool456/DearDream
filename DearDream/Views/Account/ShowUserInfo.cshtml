@@ -1,0 +1,118 @@
+﻿@model DearDream.ViewModel.UserInfoViewModel
+
+@{
+    ViewBag.Title = "个人中心";
+}
+@using Kendo.Mvc
+@using Kendo.Mvc.UI
+
+
+@Html.Partial("UserBackStageSelection")
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-horizontal">
+        <h4>基本信息</h4>
+        <hr />
+        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.UserId)
+        @Html.HiddenFor(model => model.AvatarName)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NickName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NickName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NickName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Telephone, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Telephone, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Telephone, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <h4>详细个人信息</h4>
+        <hr />
+        <div class="form-group">
+            <label class="control-label col-md-2">出生日期</label>
+            <div class="col-md-10">
+                <div class="col-md-10">
+                    @(Html.Kendo().DatePicker().Name("BirthTime").HtmlAttributes(new { style = "width:150px" }))
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EducationlevelName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("EducationlevelName")
+                @Html.ValidationMessageFor(model => model.EducationlevelName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaritalstatusName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaritalstatusName")
+                @Html.ValidationMessageFor(model => model.MaritalstatusName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.GenderName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("GenderName")
+                @Html.ValidationMessageFor(model => model.GenderName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IndustryCategoryName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("IndustryCategoryName")
+                @Html.ValidationMessageFor(model => model.IndustryCategoryName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PronviceName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("PronviceName")
+            </div>
+        </div>
+
+
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.LocationName, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("Locations")
+                    @Html.ValidationMessageFor(model => model.LocationName, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+        <input type="hidden" id="LocationName" name="LocationName" value="未设置" />
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="保存" class="btn btn-default" />
+                @Html.Partial("UpdateInfo")
+            </div>
+        </div>
+    </div>
+}
